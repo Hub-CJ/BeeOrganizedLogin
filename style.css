@@ -109,6 +109,8 @@ a{
     /* Box-shadow for 3d */
     box-shadow: inset 5px 5px 5px #cbced1,
       inset -5px -5px 5px #ffffff;
+      display: flex;
+      align-items: center;
 }
 .gfg-input-fields svg {
     height: 22px;
@@ -719,6 +721,11 @@ a{
     }
 }
 @media (max-width:590px) {
+    .gfg-div{
+        width: 350px;
+        height: 70vh;
+        
+    }
     .nav-bar-container{
         grid-template-columns: 0.7fr 0.3fr !important;
     }
@@ -759,6 +766,7 @@ a{
        overflow: hidden;
        font-size: 0.7rem;
     }
+
 }
 @media (max-width:450px){
     .sobre-nosotros{
