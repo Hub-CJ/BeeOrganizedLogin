@@ -4,11 +4,15 @@
 
 const btn_menu=document.getElementById("btn-menu")
 const slider=document.getElementById("content-slider")
+const logo=document.getElementById("img")
 
 
 var appear=false;
 
-
+img.addEventListener("click",()=>{
+    window.location("https://joaco182004.github.io/BeeOrganized/")
+    
+})
 btn_menu.addEventListener("click",()=>{
 
     if(appear==false){
