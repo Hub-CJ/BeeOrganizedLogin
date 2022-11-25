@@ -10,7 +10,7 @@ const logo=document.getElementById("img")
 var appear=false;
 
 img.addEventListener("click",()=>{
-    window.location("https://joaco182004.github.io/BeeOrganized/")
+    window.location="https://joaco182004.github.io/BeeOrganized/"
     
 })
 btn_menu.addEventListener("click",()=>{
