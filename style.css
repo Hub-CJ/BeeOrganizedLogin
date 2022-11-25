@@ -1,0 +1,815 @@
+@font-face {
+    font-family: SofiaPro;
+    src: url('../fonts/SofiaProLight.ttf');
+}
+@font-face {
+    font-family: Lustria;
+    src: url('../fonts/Lustria-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SofiaPro', serif;
+    overflow-x: hidden;
+}
+body{
+    background-color:white;
+
+    
+}
+
+a{
+    color: #412009;
+    text-decoration: none;
+}
+.labeling li:before{
+    position: absolute;
+
+    content: attr(title);
+    left: 0;
+    top: 21px;
+    width: 0;
+    background-color: #412009;
+    height: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.3s ease-in ;
+   
+}
+.main{
+    
+    width: 100vw;
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background: white;
+}
+.gfg-div {
+    /* Login Card Width and height */
+    width: 430px;
+    overflow: hidden;
+    height: 500px;
+    /* padding */
+    padding: 20px 35px 15px 35px;
+    border-radius: 35px;
+    background: #ecf0f3;
+    /* Box-shadow for 3d visualization*/
+    box-shadow:
+      -6px -6px 6px rgba(255, 255, 255, 0.8),
+      6px 6px 6px rgba(0, 0, 0, 0.2);
+}
+.gfg-logo {
+    background: url("../images/logo_amarillo.ico");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* Box-shadow for logo */
+    box-shadow: 0px 0px 2px #5f5f5f,
+      0px 0px 0px 5px #ecf0f3,
+      8px 8px 15px #a7aaaf,
+      -8px -8px 15px #ffffff;
+}
+.gfg-title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+    color: #5ed887;
+}
+.gfg-sub-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+    color: #5eaa77;
+}
+.gfg-input-fields {
+    width: 100%;
+    padding: 20px 5px 10px 5px;
+}
+.gfg-input-fields input {
+/* To hide default browser options of input field */
+    border: none;
+    outline: none;
+    /* Custom design for the input field */
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 15px 10px 15px 5px;
+}
+.gfg-email,
+.gfg-password {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    /* Box-shadow for 3d */
+    box-shadow: inset 5px 5px 5px #cbced1,
+      inset -5px -5px 5px #ffffff;
+      display: flex;
+      align-items: center;
+}
+.gfg-input-fields svg {
+    height: 22px;
+    margin: 0 10px -3px 25px;
+}
+.gfg-button {
+/* To hide default browser options of input field */
+    outline: none;
+    border: none;
+    /* Custom design for the Button */
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #67d18a;
+    box-shadow: 7px 7px 8px #cbced1,
+      -7px -7px 8px #ffffff;
+    transition: 0.5s;
+}
+.gfg-button:hover {
+    background: #5fb87d;
+}
+.gfg-button:active {
+    background: #4a9764;
+}
+.gfg-link {
+    padding-top: 20px;
+    text-align: center;
+}
+.gfg-link a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.gfg-link a:hover {
+    text-decoration: none;
+    color: #67d18a;
+    font-size: 15px;
+}
+.nav-bar-container{
+    
+    width: 100vw;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    align-items: center;
+    overflow-y: hidden;
+   
+    background-color: #EBD481;
+}
+.nav-bar-container div{
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    margin-left: 1rem;
+}
+.searching{
+    width: 400px !important;
+    height: 40px;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+ 
+    margin-left: 1rem;
+    padding-left: 20px;
+}
+.searching input{
+    width: 89%; 
+    outline: none;
+
+    border: none;
+  
+}
+.searching img{
+    width: 30px;
+    cursor: pointer;
+    
+}
+
+.labeling ul{
+    list-style: none;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.9rem;
+    width: 100%;
+    height: 100%;
+}
+.labeling li{
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    height: 100%;
+    margin: 3.5rem;
+    overflow: hidden;
+    color: #412009;
+}
+.labeling li:before{
+    position: absolute;
+
+    content: attr(title);
+    left: 0;
+    top: 21px;
+    width: 0;
+    background-color: #412009;
+    height: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.3s ease-in ;
+   
+}
+.labeling li:hover::before{
+    width: 100%;
+}
+.btn-content{
+    display: flex;
+    height: 70%;
+    justify-content: left;
+    border-left: 2px solid black   ;
+}
+.btn-content button{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.iconmenu{
+    display: none !important;
+}
+.content-slider{
+    display: none !important;
+}
+.carousel-cont{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:1900px){
+    .title-ser{
+        width: 25%;
+       }
+       .titulo-nosotros{
+        width: 25%;
+       }
+       .title-app{
+        width: 25%;
+       }
+       .main-title{
+        width: 25%;
+       }
+}
+@media (min-width:2100px){
+    .title-ser{
+        width: 20%;
+       }
+       .titulo-nosotros{
+        width: 20%;
+       }
+       .title-app{
+        width: 20%;
+       }
+       .main-title{
+        width: 20%;
+       }
+}
+@media (min-width:1850px){
+    .labeling li:before{
+        top:28px
+    }
+    .ios button,.android button{
+        
+        height: 8%;
+    }
+    .titulo h3{
+        font-size: 3rem;
+    }
+    .titulo p{
+        font-size: 1.7rem;
+    }
+    .content-info p{
+        font-size: 1.5rem;
+    }
+    .first-text p{
+        font-size: 1.7rem;
+    }
+    .part-new p{
+        font-size: 1.7rem;
+    }
+    .part-new h4{
+        
+       font-size: 2.2rem;
+    }
+    .android h3, .ios h3{
+        font-size: 3rem;
+    }
+    .android p, .ios p{
+        font-size: 2rem;
+    }
+    .title-cont-map h3{
+        font-size: 3rem;
+    }
+    .line-cont-map{
+        width: 400px;
+    }
+    .form-label{
+        font-size: 1.2rem;
+    }
+    .nombres,.correo-form,.mensaje-cont{
+        margin: 1rem;
+    }
+    .content-form button{
+        height: 40px;
+        width: 180px;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+     
+    }
+    #exampleFormControlInput2, #exampleFormControlInput1,#exampleFormControlInput3{
+        font-size: 1.2rem;
+        height: 50px;
+    }
+    #exampleFormControlTextarea1{
+        height: 100px;
+        font-size: 1.2rem;
+    }
+    .text-title h1{
+        height: 185px;
+    }
+}
+@media (max-width:1700px){
+  
+    .title-serv{
+      
+        height: 10% !important;
+        
+      
+    }
+    .title-serv h3{
+        font-size: 1rem;
+        height: 80px;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .text-title{
+        font-size: 3rem;
+    }
+    .text-title h1{
+        font-size: 5rem !important;
+        height: 120px;
+    }
+    .descripcion-slogan h2{
+        font-size: 2.5rem;
+    }
+    .title-app h2{
+        font-size:2rem !important;
+    }
+    .descripcion-slogan h3{
+        font-size: 1.5rem;
+    }
+    .descripcion-slogan b{
+        font-size: 1.5rem;
+    }
+    .searching input{
+        width: 82%;
+    }
+    .searching{
+        width: 100% !important;
+    }
+    .logo{
+        width: 120px;
+    }
+    .logo-cont img{
+        width: 18rem;
+    }
+    .content-nosotros h2{
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+
+        height: 160px;
+    
+    }
+    .content-nosotros p{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+  
+    }
+    .content-parrafo{
+        height: 100%;
+    }
+    .line{
+        margin-left: 1rem;
+        height: 8px;
+        width: 45vw;
+    }
+    .titulo-nosotros h2{
+        font-size: 1.75rem;
+    }
+   
+    .first-text p{
+        font-size: 1.05rem;
+    }
+    .part-new p{
+        font-size: 1.05rem;
+    }
+    .second-part img{
+        width: 200px;
+    }
+    .labeling li{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1.5rem;
+    }
+    .app h2{
+        font-size: 3rem;
+ 
+    }
+  
+    .disponibles button{
+        height: 9%;
+        width: 25%;
+    }
+    .content-msg label{
+        top: 10%;
+    }
+    .main-title h2{
+        font-size: 1.75rem;
+    }
+}
+@media (max-width:1300px){
+    .main-title{
+        height: 30%;
+    }
+    .first-text p{
+        font-size: 0.94rem;
+    }
+}
+
+@media (max-width:1050px){
+    
+    .nav-bar-container{
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+    .labeling{
+        display: none !important;
+    }
+    .list-content{
+        display: none !important;
+    }
+    .searching-slider-cont{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .searching-slider{
+        display: flex;
+
+    }
+    .searching-slider img{
+        width: 20px;
+    }
+    .content-apps{
+        grid-template-columns: none;
+    }
+    .servicios-cont{
+        grid-template-columns: none;
+        grid-template-rows: 0.6fr 0.4fr !important;
+     }
+    .content-info p{
+        font-size: 0.8rem;
+        
+    }
+  
+
+    .cont{
+        margin-left: 2rem;
+    }
+    .searching{
+        width: 50% !important;
+    }
+    .searching img{
+  
+        margin-right: 0.5rem;
+    }
+    .labeling{
+        visibility: hidden;
+    }
+    .logo{
+        width: 80px;
+    }
+    .btn-content{
+        visibility: hidden;
+        display: none !important;
+    }
+    .menu-btn{
+        display: flex;
+        justify-content: right;
+      
+    }
+    .iconmenu{
+        display: flex !important;
+        font-size: 2rem;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    .content-slider{
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        display: none;
+        top: 90px;
+        color: #412009;
+        height: 0px;
+        font-weight: bold;
+        overflow: hidden;
+        width: 100vw;
+        transition:height 1s ease-in ;
+       
+    }
+ 
+    
+    .content-slider ul{
+        margin-top: 1rem;
+       display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 0;
+    }
+    .content-slider li{
+        margin: 0.8rem;
+        overflow: hidden;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .ios button,.android button{
+        
+        height: 15%;
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+        width: 25% !important;
+        background-color: #EBD481;
+      
+        height: 50px;
+    }
+    .search img{
+        width: 20px;
+    }
+    .slider-search{
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 1rem;
+        width: 100% !important;
+        align-items: center !important; 
+        height: 60px;
+    }
+    .slider-search p{
+        height: 60px;
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    .btn-content-search{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        height: 110px;
+    
+        border-top: 3px solid #412009;
+    }
+    .btn-content-search button{
+        margin: 0 0.5rem;
+        background-color: inherit;
+        border-radius: 2rem;
+        width: 130px;
+        border: black 2px solid ;
+        font-weight: bold;
+        overflow: hidden;
+        height: 35px;
+    }
+}
+@media (max-width:850px){
+    .encabezado{
+        height: 30vh;
+    }
+    .presentation{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .second-part{
+        display: grid;
+        grid-template-columns: 0.4fr 0.6fr;
+        width: 100%;
+        height: 30%;
+    }
+    .second-part img{
+        width: 120px;
+    }
+    .part-new{
+        width: 100%;
+    }
+    .part-new p{
+        font-size: 0.85rem;
+    }
+    .first-text{
+        width: 90vw;
+        margin-top: 1rem;
+       
+    }
+    .first-text p{
+        font-size: 0.85rem;
+    }
+   .name{
+        border: none;
+        width: 90vw;
+        height: 40%;
+
+        border-bottom: 5px solid white;
+        overflow: hidden;
+        font-weight: bold;
+    }
+    .text-title{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text-title h1{
+        font-size: 4rem !important;
+        
+        margin-bottom: 0;
+    }    
+    .mediaquerytitle{
+        display: flex;
+
+    }
+    .mediaquerytitle h2{
+        font-size: 2rem;
+    }
+    .descripcion-slogan h3{
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+    .descripcion-slogan button{
+        width: 40%;
+    }
+    .orga-title,.base-title{
+        display: none;
+    }
+    .titulo-nosotros,.title-ser,.title-app,.main-title{
+        width: 40vw;
+        
+    }
+    .titulo-nosotros h2,.title-ser h2,.title-app h2,.main-title h2{
+        font-size: 1.5rem !important;
+    
+    }
+  
+    .title-ser,.title-app,.main-title{
+      height: 45%;
+   
+    }
+    .soporte{
+        height: 150vh;
+    }
+    .soporte-content{
+        grid-template-columns: none;
+    }
+    .content-form{
+        width: 100%;
+    }
+    .telefono,.direccion,.correo{
+       
+       
+        font-size: 0.9rem;
+    }
+    .contactanos{
+        width: 90vw;
+    }
+    .line-cont-map{
+        width: 50%;
+    }
+}
+@media (max-width:590px) {
+    .gfg-div{
+        width: 350px;
+        height: 70vh;
+        
+    }
+    .nav-bar-container{
+        grid-template-columns: 0.7fr 0.3fr !important;
+    }
+    .btn-content-search{
+        width: 100% !important;
+    }
+    .searching{
+        width: 80% !important;
+    }
+    .servicios-cont{
+        grid-template-columns: none;
+        grid-template-rows: 0.4fr 0.6fr !important;
+     }
+     .ios button,.android button{
+        width: 40%;
+        height: 20%;
+    }
+    .list-content ul{
+        display: none;
+    }
+    .redes-mediaquery{
+        display: flex;
+    }
+    .redes img{
+        width: 20px;
+        
+    }
+    .redes ul{
+        padding-left: 0;
+    }
+    .redes li{
+        margin: 0.5rem;
+    }
+    .bottom-footer{
+        align-items: center;
+    }
+    .bottom-footer p{
+       overflow: hidden;
+       font-size: 0.7rem;
+    }
+
+}
+@media (max-width:450px){
+    .sobre-nosotros{
+        height: 120vh;
+    }
+    .servicios{
+        height: 120vh;
+    }
+    .app{
+        height: 120vh;
+    }
+    .soporte{
+        height: 180vh;
+    }
+}
+@media (max-width:400px){
+   .text-title h1{
+    font-size: 3.3rem !important;
+   }
+   .mediaquerytitle h2{
+    margin: 0.8rem;
+    margin-left: 2rem;
+   }
+   body > section.presentation > div.descripcion-slogan > button{
+    margin-top: 0.5rem !important;
+   }
+   .direccion p{
+    font-size: 0.8rem;
+    margin-bottom: 0;
+   }
+   .telefono p, .correo p{
+    font-size: 0.8rem;
+   }
+   .title-ser{
+    width: 50vw;
+   }
+   .titulo-nosotros{
+    width: 50vw;
+   }
+   .title-app{
+    width: 50vw;
+   }
+   .main-title{
+    width: 50vw;
+   }
+}
