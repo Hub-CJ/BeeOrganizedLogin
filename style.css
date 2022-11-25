@@ -784,6 +784,11 @@ font-family: 'SofiaPro';
     }
 }
 @media (max-width:400px){
+      .gfg-div{
+   
+        height: 85vh;
+        
+    }
    .text-title h1{
     font-size: 3.3rem !important;
    }
