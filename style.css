@@ -25,7 +25,7 @@ a{
 }
 .labeling li:before{
     position: absolute;
-
+font-family: 'SofiaPro';
     content: attr(title);
     left: 0;
     top: 21px;
@@ -38,7 +38,7 @@ a{
    
 }
 .main{
-    
+    font-family: 'SofiaPro';
     width: 100vw;
     height: calc(100vh - 90px);
     display: flex;
@@ -62,7 +62,7 @@ a{
       6px 6px 6px rgba(0, 0, 0, 0.2);
 }
 .gfg-logo {
-    background: url("../images/logo_amarillo.ico");
+    background: url("./images/logo_amarillo.ico");
     background-size: cover;
     width: 100px;
     height: 100px;
@@ -216,6 +216,7 @@ a{
     font-weight: bold;
     font-size: 1.3rem;
     height: 100%;
+    font-family: 'SofiaPro';
     margin: 3.5rem;
     overflow: hidden;
     color: #412009;
